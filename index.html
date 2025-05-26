@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Manipulation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="outer">
+    <h2>Boxes</h2>
+    <form id="myForm">
+        <fieldset>
+            <label>Blue box sits inside the red box</label>
+            <button type="button" id="btn1">Click</button>
+        </fieldset>
+        <fieldset>
+            <label>Blue box sits under the red box</label>
+            <button type="button" id="btn2">Click</button>
+        </fieldset>
+        <fieldset>
+            <label>Blue box sits to the right of the red box</label>
+            <button type="button" id="btn3">Click</button>
+        </fieldset>
+        <fieldset>
+            <label>Red box sits to the right of the blue box</label>
+            <button type="button" id="btn4">Click</button>
+        </fieldset>
+        <fieldset>
+            <label>Blue box sits inside the red box and move 20px down and 45px to the right</label>
+            <button type="button" id="btn5">Click</button>
+        </fieldset>
+        <fieldset>
+            <label>Green box around both the blue and red boxes</label>
+            <button type="button" id="btn6">Click</button>
+        </fieldset>
+    </form>
+    <div id="boxes">
+        <div id="green" class="hidden">
+          <div id="red">
+            <div id="blueIn" class="hidden"></div>
+          </div>
+          
+            <div id="blueBottom" class="hidden"></div>
+        </div>
+    </div>
+</div>
+<script src="js/handling.js"></script>
+</body>
+</html>

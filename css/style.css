@@ -1,0 +1,157 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#outer {
+
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+button:hover {
+  background-color: #27047d;
+}
+
+#boxes {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Green Box (contains red and blue boxes) */
+
+/* Green Box Style */
+.green-box {
+  width: 960px;
+  height: 660px;
+  background-color: green;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+/* Red Box Style */
+.red-box {
+  width: 600px;
+  height: 600px;
+  background-color: red;
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+
+}
+.red-box-right {
+  width: 600px;
+  height: 600px;
+  background-color: red;
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+  float: right;
+
+}
+
+/* Blue Box Inside Red Box */
+.blue-inside {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: block;
+}
+
+/* Blue Box Below Red Box */
+.blue-bottom {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  margin-top: 20px;
+  display: block;
+}
+
+.blue-right {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  margin-left: 650px;
+  display: block;
+
+}
+
+.blue-left {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  display: block;
+  margin-left: -350px;
+}
+
+.blue-off {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  position: absolute;
+  /* Positions the blue box relative to redBox */
+  margin-top: 20px;
+  /* 20px down */
+  margin-left: 255px;
+
+}
